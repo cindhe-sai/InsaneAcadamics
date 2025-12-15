@@ -12,60 +12,12 @@ body {
   overflow-x: hidden;
 }
 
-/* PARTICLES */
-#particles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-/* NAVBAR */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
-  z-index: 100;
-}
-
-.navbar .logo {
-  font-size: 22px;
-  color: #00f7ff;
-  text-shadow: 0 0 10px #00f7ff;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-.navbar ul li a:hover,
-.navbar ul li.active a {
-  background: rgba(0,255,255,0.25);
-  box-shadow: 0 0 20px rgba(0,255,255,0.8);
-}
-
 /* HERO CARD */
 .scene {
   perspective: 1200px;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .card {
@@ -143,3 +95,4 @@ body {
   transform: translateZ(80px) scale(1.07);
   box-shadow: 0 0 55px rgba(0,255,213,1);
 }
+
