@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f2027, #000);
+  color: #ffffff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* PARTICLES */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li.active a {
+  background: rgba(0,255,255,0.25);
+  box-shadow: 0 0 20px rgba(0,255,255,0.8);
+}
+
+/* HERO CARD */
+.scene {
+  perspective: 1200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.card {
+  background: rgba(255,255,255,0.06);
+  padding: 40px 60px;
+  border-radius: 22px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 45px rgba(0,255,255,0.4);
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease;
+}
+
+.card h1 {
+  font-size: 42px;
+  color: #00f7ff;
+  text-shadow: 0 0 20px #00f7ff;
+}
+
+.card p {
+  margin-top: 10px;
+  opacity: 0.85;
+}
+
+/* PYTHON SECTION */
+.python-section {
+  margin-top: 100px;
+  padding: 40px 20px;
+}
+
+.python-section h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #ffde59;
+  text-shadow: 0 0 20px #ffde59;
+}
+
+/* CATEGORY */
+.category {
+  margin: 70px auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.category h3 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #00ffd5;
+  text-shadow: 0 0 15px #00ffd5;
+}
+
+/* GRID */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  perspective: 1200px;
+}
+
+/* BUTTONS */
+.course-btn {
+  text-decoration: none;
+  padding: 22px;
+  background: linear-gradient(145deg, rgba(0,255,213,0.2), rgba(255,255,255,0.05));
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  box-shadow: 0 0 25px rgba(0,255,213,0.45);
+  transform-style: preserve-3d;
+  transform: translateZ(25px);
+  transition: all 0.3s ease;
+}
+
+.course-btn:hover {
+  transform: translateZ(80px) scale(1.07);
+  box-shadow: 0 0 55px rgba(0,255,213,1);
+}
